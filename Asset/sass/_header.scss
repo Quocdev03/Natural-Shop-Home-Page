@@ -1,0 +1,55 @@
+.navbar {
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-toggle {
+        cursor: pointer;
+        display: none;
+
+        &-item {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: #8ba969;
+            transition: all .3s linear;
+        }
+    }
+
+    &-list {
+        display: flex;
+        align-items: center;
+        gap: 0 25px;
+        z-index: 2;
+
+        &-link {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 9px 25px;
+            color: #525252;
+            transition: all .3s linear;
+
+            &:hover {
+                background-color: #8ba969;
+                transition: all .3s linear;
+                color: #fff;
+                border-radius: 3px;
+            }
+
+            &-contact {
+                color: white;
+                background-color: #8ba969;
+                padding-inline: 30px;
+                border: 2px solid #8ba969;
+
+                &:hover {
+                    background-color: transparent;
+                    color: #8ba969;
+                }
+            }
+        }
+    }
+}

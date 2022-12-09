@@ -1,0 +1,237 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #eee;
+  line-height: 1;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+}
+
+.wrapper {
+  width: 100%;
+  display: block;
+  max-width: 1230px;
+  padding: 0 25px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.navbar {
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar-toggle {
+  cursor: pointer;
+  display: none;
+}
+.navbar-toggle-item {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: #8ba969;
+  transition: all 0.3s linear;
+}
+.navbar-list {
+  display: flex;
+  align-items: center;
+  gap: 0 25px;
+  z-index: 2;
+}
+.navbar-list-link {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 9px 25px;
+  color: #525252;
+  transition: all 0.3s linear;
+}
+.navbar-list-link:hover {
+  background-color: #8ba969;
+  transition: all 0.3s linear;
+  color: #fff;
+  border-radius: 3px;
+}
+.navbar-list-link-contact {
+  color: white;
+  background-color: #8ba969;
+  padding-inline: 30px;
+  border: 2px solid #8ba969;
+}
+.navbar-list-link-contact:hover {
+  background-color: transparent;
+  color: #8ba969;
+}
+
+.home {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 35px;
+  z-index: 1;
+}
+.home > * {
+  width: 50%;
+}
+.home-content-title, .home-content-caption {
+  font-family: "DM Serif Display", serif;
+}
+.home-content-title {
+  color: #8ba969;
+  font-size: 80px;
+  line-height: 0.8;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.home-content-caption {
+  background-color: #e7e3d9;
+  display: inline-block;
+  color: #8ba969;
+  padding: 3px 15px 3px 5px;
+  font-weight: bold;
+  font-size: 16px;
+  border-left: 3px solid #8ba969;
+  margin-bottom: 20px;
+}
+.home-content-desc {
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #525252;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 450px;
+}
+.home-content-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.home-content-buttons-link {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 15px;
+  color: #8ba969;
+  padding-inline: 30px;
+  border: 2px solid #8ba969;
+  border-radius: 3px;
+  transition: all 0.3s linear;
+}
+.home-content-buttons-link:hover {
+  transform: scale(1.04);
+}
+.home-content-buttons-link-active {
+  color: white;
+  background-color: #8ba969;
+  padding-inline: 30px;
+  border: 2px solid #8ba969;
+  transition: all 0.3s linear;
+}
+.home-content-buttons-link-active:hover {
+  transform: scale(1.04);
+}
+.home-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768.98px) {
+  .wrapper {
+    padding: 0 30px;
+  }
+  .navbar {
+    padding-top: 50px;
+  }
+  .home > * {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .home {
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-top: 0;
+  }
+  .home-content-title {
+    margin-top: 30px;
+  }
+  .home-image {
+    width: 100%;
+    max-width: 600px;
+    height: 420px;
+    margin-top: 40px;
+    overflow: hidden;
+  }
+  .navbar-toggle {
+    display: block;
+  }
+  .navbar-list {
+    position: absolute;
+    top: 95px;
+    left: 0;
+    background-color: #fefefe;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.2s linear;
+  }
+  .navbar-list.active {
+    height: 300px;
+    overflow: unset;
+    transition: all 0.2s linear;
+  }
+  .navbar-list-item {
+    margin: 4px 0;
+  }
+}
+@media screen and (min-width: 670px) {
+  .hero-content-title {
+    margin-top: 45px;
+  }
+}
+@media screen and (max-width: 625px) {
+  .home-content-buttons {
+    justify-content: space-between;
+    padding-bottom: 80px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
